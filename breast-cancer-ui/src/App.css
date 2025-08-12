@@ -1,0 +1,67 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.feature-input {
+  display: flex;
+  flex-direction: column;
+}
+.feature-input label {
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+input[type="number"] {
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+button[type="submit"], .form-actions button {
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+button[disabled] {
+  background: #aaa;
+  cursor: not-allowed;
+}
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.error {
+  color: #b71c1c;
+  background: #ffebee;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 4px;
+}
+.result {
+  background: #e3f2fd;
+  color: #0d47a1;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 4px;
+}
+.result.success {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+.spinner {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #1976d2;
+  font-weight: bold;
+}
